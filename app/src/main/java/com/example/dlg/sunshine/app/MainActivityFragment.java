@@ -42,9 +42,13 @@ public class MainActivityFragment extends Fragment {
 
         mForecastAdapter =
                 new ArrayAdapter<String>(
+//                        Current context is this fragments parent activity
                         getActivity(),
+//                        Pass in ID of list item layout file
                         R.layout.list_item_forecast,
+//                        Pass in ID of the textview we want to populate with data
                         R.id.list_item_forecast_textview,
+//                        Pass in the fake data
                         weekForecast);
 
 
